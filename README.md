@@ -4,8 +4,6 @@ So after a discussion with a colleague, we decided the best way to ascertain exa
 
 Hence, <a href="https://is.jackwilshereinjured.com/" target="_blank">`is.jackwilshereinjured.com`</a> was born.
 
-<hr>
-
 ## credits
 
 <a href="http://stackoverflow.com/users/1241793/ben-pearl-kahan">
@@ -13,8 +11,6 @@ Hence, <a href="https://is.jackwilshereinjured.com/" target="_blank">`is.jackwil
 </a>
 
 <i>Built with love by Ben Kahan - <a href="https://www.bkdev.co.uk/">BKDev</a></i>
-
-<hr>
 
 ## versions
 
@@ -45,8 +41,6 @@ Features include:
  * Editing lovely `.svg` curly things above and below the header
  * Colours
 * Sharing meta for Twitter, Facebook etc.
-
-<hr>
 
 ## other people's stuff used
 
