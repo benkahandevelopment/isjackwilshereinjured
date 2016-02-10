@@ -30,7 +30,7 @@ Features include:
  * Editing lovely `.svg` curly things above and below the header
  * Colours
 * Sharing meta for Twitter, Facebook etc.
-* 
+
 <hr>
 
 # other people's stuff used
