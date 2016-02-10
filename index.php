@@ -150,23 +150,62 @@
 				Photo taken shamelessly from The Independent
 			</div>
 			<div class="col" style="text-align: center;">
-				<span class='st_facebook_hcount' displayText='Facebook'></span>
-				<span class='st_twitter_hcount' displayText='Tweet'></span>
-				<span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+				<div class="shareBtn fb"><div class="fb-share-button" data-href="https://is.jackwilshereinjured.com" data-layout="button_count"></div></div>
+				<div class="shareBtn"><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%20found%20out%20about%20Jack%20Wilshere's%20injury... https%3A%2F%2Fis.jackwilshereinjured.com">Tweet</a></div>
+				<div class="shareBtn"><a class="github-button" href="https://github.com/benkahandevelopment/isjackwilshereinjured/fork" data-icon="octicon-repo-forked" data-count-href="/benkahandevelopment/isjackwilshereinjured/network" data-count-api="/repos/benkahandevelopment/isjackwilshereinjured#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork benkahandevelopment/isjackwilshereinjured on GitHub">Fork</a></div>
 			</div>
-			<div class="col" style="text-align: right; float:right;">
-				<a href="https://bkdev.co.uk" alt="BKDev"><img src="//img.bkdev.co.uk/img/logo-light.png" alt="Website built and maintained by BKDev" height=20></a>
+			<div class="col right">
+				<a href="https://www.bkdev.co.uk" alt="BKDev" target="_blank"><img src="//img.bkdev.co.uk/img/logo-light.png" alt="Website built and maintained by BKDev" height=20></a>
 			</div>
 			<div style="clear:both;"></div>
 		</div>
 	</footer>
 	<noscript>Is Jack Wilshere Injured? works best when you are using JavaScript</noscript>
+	<!-- JS -->
+	<script src="//code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript">stLight.options({publisher: "3519ae4e-94ce-464a-9e7c-714a612de1b0", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+	<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+	<!-- Facebook Share -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=1501918023449316";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Twitter Share -->
+	<script>window.twttr = (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0],
+	    t = window.twttr || {};
+	  if (d.getElementById(id)) return t;
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = "https://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	 
+	  t._e = [];
+	  t.ready = function(f) {
+	    t._e.push(f);
+	  };
+	 
+	  return t;
+	}(document, "script", "twitter-wjs"));</script>
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-72231072-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<!-- End Google Analytics -->
 </body>
-
-<!-- JS -->
-<script src="//code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "3519ae4e-94ce-464a-9e7c-714a612de1b0", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-
 </html>
