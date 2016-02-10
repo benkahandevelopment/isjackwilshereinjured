@@ -4,22 +4,39 @@
 	 * Global defaults
 	 */
 
-	$curl = true; //will send a curl request on first load of each day to check status
-	$debug = false; //will show error logs
+	//Send a curl request on first load of each day to check status
+	$curl = true;
+
+	//Show error logs (to public - super users see errors)
+	$debug = false;
 	
-	$defaultInjured = true; //the default injury status
+	//Default injury statuses
+	$defaultInjured = true;
 	$defaultDetail = "calf/shin injury";
 	$defaultLength = "6 weeks";
+
+	//Array of super-user IP addresses
+	$whitelist = ["165.225.80.120"];
+
+	/*
+	 * END OF GLOBAL VARIABLES - HERE BE MONSTERS
+	 *
+	 *******************************************************************/
+
+	/*
+	 * Super user?
+	 */
+
+	$super = in_array($_SERVER['REMOTE_ADDR'], $whitelist) ? true : false;
 
 	/* 
 	 * Error reporting
 	 */
 
-	if($debug){
+	if($debug||$super){
 		error_reporting(E_ALL);
 		ini_set('display_errors', 1);
 	}
-
 
 	/*
 	 * Check subdomain and redirect (301) if incorrect
@@ -30,7 +47,6 @@
 		header("Location: https://is.jackwilshereinjured.com");
 		exit;
 	}
-
 
 	/*
 	 *  cURL to physioroom.com
@@ -125,6 +141,9 @@
     <meta name="twitter:title" property="og:title" itemprop="title name" content="Is Jack Wilshere Injured?" >
     <meta name="twitter:description" property="og:description" itemprop="description" content="<?php echo $desc ?>" >
 
+    <?php if($super) echo "    <!-- Welcome, super user! -->"; ?>
+
+
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,800|Pacifico|Ultra">
 	<!--<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
@@ -152,7 +171,8 @@
 			<div class="col" style="text-align: center;">
 				<div class="shareBtn fb"><div class="fb-share-button" data-href="https://is.jackwilshereinjured.com" data-layout="button_count"></div></div>
 				<div class="shareBtn"><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%20found%20out%20about%20Jack%20Wilshere's%20injury... https%3A%2F%2Fis.jackwilshereinjured.com">Tweet</a></div>
-				<div class="shareBtn"><a class="github-button" href="https://github.com/benkahandevelopment/isjackwilshereinjured/fork" data-icon="octicon-repo-forked" data-count-href="/benkahandevelopment/isjackwilshereinjured/network" data-count-api="/repos/benkahandevelopment/isjackwilshereinjured#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork benkahandevelopment/isjackwilshereinjured on GitHub">Fork</a></div>
+				<!--<div class="shareBtn"><a class="github-button" href="https://github.com/benkahandevelopment/isjackwilshereinjured/fork" data-icon="octicon-repo-forked" data-count-href="/benkahandevelopment/isjackwilshereinjured/network" data-count-api="/repos/benkahandevelopment/isjackwilshereinjured#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork benkahandevelopment/isjackwilshereinjured on GitHub">Fork</a></div>-->
+				<div class="shareBtn"><a class="github-button" href="https://github.com/benkahandevelopment/isjackwilshereinjured/fork" data-icon="octicon-repo-forked" aria-label="Fork benkahandevelopment/isjackwilshereinjured on GitHub">Fork</a></div>
 			</div>
 			<div class="col right">
 				<a href="https://www.bkdev.co.uk" alt="BKDev" target="_blank"><img src="//img.bkdev.co.uk/img/logo-light.png" alt="Website built and maintained by BKDev" height=20></a>
@@ -194,18 +214,5 @@
 	 
 	  return t;
 	}(document, "script", "twitter-wjs"));</script>
-
-	<!-- Google Analytics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-72231072-2', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
-	<!-- End Google Analytics -->
 </body>
 </html>
