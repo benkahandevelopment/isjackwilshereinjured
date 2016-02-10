@@ -18,6 +18,12 @@ Hence, <a href="https://is.jackwilshereinjured.com/" target="_blank">`is.jackwil
 
 # versions
 
+## v1.1
+
+* Removed ShareThis.com bullshit buttons
+* Added Facebook/Twitter native share/tweet buttons
+* Moved deferred JS to end of `<body>` tag
+
 ## v1.0
 
 Features include:
@@ -35,5 +41,4 @@ Features include:
 
 # other people's stuff used
 
-* <a href="http://www.sharethis.com/">`sharethis.com`</a>
 * <a href="https://jquery.com/">`jQuery`</a>
