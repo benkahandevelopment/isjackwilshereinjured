@@ -1,0 +1,191 @@
+/* Reset */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Globals */
+html, body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.62em;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+h1 {
+	font-family: "Ultra", Helvetica, Arial, sans-serif;
+	font-size: 72px;
+	text-transform: uppercase;
+	line-height: 1.62em;
+}
+
+div.hero {
+	background-size: cover;
+	background-position: center bottom;
+	position: relative;
+	height: 100vh;
+}
+
+div.header {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	/* color: #fff; */
+	-ms-transform: translate(0,-50%); /* IE 9 */
+	-webkit-transform: translate(0,-50%); /* Safari */
+	transform: translate(0,-50%);
+	-ms-transform: translate(0,calc(-50% - 66px)); /* IE 9 */
+	-webkit-transform: translate(0,calc(-50% - 66px)); /* Safari */
+	transform: translate(0,calc(-50% - 66px));
+	color: #f2e394;
+}
+
+div.header h1 {
+	text-shadow: 0 4px 0 #8C4646, 0 5px 5px black, 0 0 5px black;
+	text-shadow: 0 4px 0 #8C4646, 0 5px 5px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,0.5);
+}
+
+div.header h2.subtitle {
+	font-size: 32px;
+	font-family: "Pacifico", Helvetica, Arial, sans-serif;
+	color: #f2e394;
+	text-shadow: 0 0 5px black;
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+div.header div.curly {
+	background:url(curly.svg) center center;
+	background-size: contain;
+	height: 120px;
+	width: 90%;
+	background-repeat:no-repeat;
+	margin: 0 auto;
+	opacity: 0.5;
+}
+
+div.header div.curly.bottom {
+	background-image:url(curly2.svg);
+	margin-top: 2em;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	color: #888;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+footer .container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+	box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0 auto;
+}
+
+footer .container .col {
+	width: calc(100% / 3);
+	float: left;
+	margin: 0; padding: 0;
+}
+
+footer .container .col img { opacity:0.3; }
+footer .container .col img:hover { opacity:0.75; }
+
+@media
+/*only screen and (max-device-width: 667px)
+only screen and (-webkit-device-pixel-ratio: 2)*/
+only screen and (max-width: 480px) {
+	h1 {
+		font-size: 48px;
+		line-height: 1em;
+	}
+
+	div.hero {
+		height: auto;
+		min-height: 80vh;
+		display: block;
+	}
+
+	div.header h2.subtitle {
+		font-size: 24px;
+		line-height: 1em;
+		margin-top: 10px;
+	}
+
+	footer {
+		position: relative;
+		display:block;
+		width: auto;
+		background: black;
+		text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1);
+		min-height: 20vh;
+	}
+
+	footer .container {
+		width: auto;
+		max-width: none;
+	}
+
+	footer .container .col {
+		width: auto;
+		float:none;
+		display:block;
+		margin: 20px 0;
+		text-align: center !important;
+	}
+
+	footer .container .col img { opacity:1; }
+}
+
+
+@media
+/*only screen and (max-device-width: 667px)
+only screen and (-webkit-device-pixel-ratio: 2)*/
+only screen and (max-width: 960px) {
+	h1 {
+		font-size: 56px;
+		line-height: 1em;
+	}
+
+	div.hero {
+		height: auto;
+		min-height: 80vh;
+		display: block;
+	}
+
+	div.header h2.subtitle {
+		font-size: 24px;
+		line-height: 1em;
+		margin-top: 10px;
+	}
+
+	footer {
+		position: relative;
+		display:block;
+		width: auto;
+		background: black;
+		text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1);
+		min-height: 20vh;
+	}
+
+	footer .container {
+		width: auto;
+		max-width: none;
+	}
+
+	footer .container .col {
+		width: auto;
+		float:none;
+		display:block;
+		margin: 20px 0;
+		text-align: center !important;
+	}
+
+	footer .container .col img { opacity:1; }
+}
