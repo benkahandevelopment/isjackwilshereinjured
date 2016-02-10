@@ -8,6 +8,11 @@ Hence, <a href="https://is.jackwilshereinjured.com/" target="_blank">`is.jackwil
 
 # credits
 
+<a href="http://stackoverflow.com/users/1241793/ben-pearl-kahan">
+<img src="http://stackoverflow.com/users/flair/1241793.png" width="208" height="58" alt="profile for Ben Pearl Kahan at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Ben Pearl Kahan at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
+
+<i>Built with love by Ben Kahan - <a href="https://www.bkdev.co.uk/">BKDev</a></i>
 
 <hr>
 
