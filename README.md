@@ -6,7 +6,7 @@ Hence, <a href="https://is.jackwilshereinjured.com/" target="_blank">`is.jackwil
 
 <hr>
 
-# credits
+## credits
 
 <a href="http://stackoverflow.com/users/1241793/ben-pearl-kahan">
 <img src="http://stackoverflow.com/users/flair/1241793.png" width="208" height="58" alt="profile for Ben Pearl Kahan at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Ben Pearl Kahan at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
@@ -16,15 +16,24 @@ Hence, <a href="https://is.jackwilshereinjured.com/" target="_blank">`is.jackwil
 
 <hr>
 
-# versions
+## versions
 
-## v1.1
+### v1.2
+
+* Modified `fork` GitHub button to no longer show count because nobody forks me :(
+* Added "Super Users"
+ * Entirely for development purposes
+ * Added PHP array of whitelisted IPs in the Globals section
+ * Added pleasant but commented-out message for Super Users in `<head>`
+ * Show debug information by default for these users
+
+### v1.1
 
 * Removed ShareThis.com bullshit buttons
 * Added Facebook/Twitter native share/tweet buttons
 * Moved deferred JS to end of `<body>` tag
 
-## v1.0
+### v1.0
 
 Features include:
 
@@ -39,6 +48,6 @@ Features include:
 
 <hr>
 
-# other people's stuff used
+## other people's stuff used
 
 * <a href="https://jquery.com/">`jQuery`</a>
